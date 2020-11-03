@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>News - Politics</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- JS -->
+<script src="js/scripts.js"></script>
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<header class="clearfix">
+    <div>
+        <h1>Boston City</h1>
+        <h2>Where History Comes Alive</h2>
+    </div>
+</header>
+    
+    
+<!-- NAVIGATION HERE -->
+<div class="wrapper" id="nav-wrapper">
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&Congruent;</button>
+        <ul id="nav-menu" class="hide">
+            <li class="active"><a href="#">Visit</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pay Bills</a></li>
+            <li><a href="#">Meetings</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+</div>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+    <div class='image-slider'>
+        <figure>
+            <picture>
+                <source srcset="./images/slide-1_l.jpg" media="(min-width: 35rem)">
+                <img src="./images/slide-1_s.jpg" alt="slide-1">
+            </picture>
+            <figcaption>Boston is named after a town in England</figcaption>
+        </figure>
+        <figure>
+            <picture>
+                <source srcset="./images/slide-2_l.jpg" media="(min-width: 35rem)">
+                <img src="./images/slide-2_s.jpg" alt="slide-2">
+            </picture>
+            <figcaption>Boston formerly had a city-wide ban on celebrating Christmas</figcaption>
+        </figure>
+        <figure>
+            <picture>
+                <source srcset="./images/slide-3_l.jpg" media="(min-width: 35rem)">
+                <img src="./images/slide-3_s.jpg" alt="slide-3">
+            </picture>
+            <figcaption>Boston was home to the first chocolate factory in America</figcaption>
+        </figure>
+        <figure>
+            <picture>
+                <source srcset="./images/slide-4_l.jpg" media="(min-width: 35rem)">
+                <img src="./images/slide-4_s.jpg" alt="slide-4">
+            </picture>
+            <figcaption>Much of Boston used to be covered in water</figcaption>
+        </figure>
+    </div>
+
+    <h1 style='font-size: 2.2rem;'>Plan Your Visit</h1><br>
+    <div class='card-container'>
+        <div>
+            <a href="">
+                <img src="./images/icon-2.png" alt="">
+                <h2>Places to Stay</h2>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <img src="./images/icon-1.png" alt="">
+                <h2>Move Here</h2>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <img src="./images/icon-3.png" alt="">
+                <h2>History</h2>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <img src="./images/icon-4.png" alt="">
+                <h2>Fine Dining</h2>
+            </a>
+        </div>
+    </div>
+    <br><br>
+    </main>
+    
+<!-- FOOTER HERE -->  
+<div class="wrapper" id="footer-wrapper"> 
+    <footer>
+        <p style="text-align: center">&copy; 20XX Sean Jensen | Login</p>
+    </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.image-slider').slick({
+            dots: true,
+            arrows: false, 
+            speed: 1000,
+            infinite: true,
+            cssEase: 'ease-out',
+            autoplay: true,
+            autoplaySpeed: 8000
+        })
+    })
+</script>
+
+
+</body>
+</html>

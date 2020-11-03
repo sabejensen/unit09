@@ -1,0 +1,35 @@
+nav, main, footer, header {
+        max-width: 64rem;
+        margin:auto;
+        box-shadow: 2px 0px 10px #888888;
+}
+
+/*----------- BODY --------------*/
+
+.wrapper {
+        width: 100%;
+}
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav ul li {
+        width: 10%;
+}
+
+
+/*----------- MAIN --------------*/
+.card-container div {
+    width: 25%;
+}
+.card-container div a img {
+    margin-top: 20%;
+    height: 110px;
+    width: 110px
+}
+
+/*----------- FOOTER --------------*/
+    
